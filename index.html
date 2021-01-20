@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="./app.js" type="module"></script>
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/normalize.css">
+</head>
+
+<body>
+   <div class="container main-container">
+      <div class="container part-container">
+         <p class="title">Crear Usuario</p>
+         <p class="subtitle">Porfavor completa los campos</p>
+         <form id="form" class="container">
+            <div id="nombre" class="input-container">
+               <label class="input-label">Nombre</label>
+               <input type="text" class="type-base  input-base" placeholder="Ej. Saul" maxlength="50">
+               <span class="input-helper"></span>
+            </div>
+            <div id="edad" class="input-container">
+               <label class="input-label">Edad</label>
+               <input type="text" class="type-base  input-base" placeholder="Ej. 23" maxlength="2">
+               <span class="input-helper"></span>
+            </div>
+            <div id="pais" class="input-container">
+               <label class="input-label">Pais</label>
+               <select class="type-base input-base">
+                  <option disabled selected>Seleciona</option>
+               </select>
+               <span class="input-helper"></span>
+            </div>
+            <div id="estado" class="input-container">
+               <label class="input-label">Estado</label>
+               <select class="type-base input-base">
+                  <option disabled selected>Seleciona</option>
+               </select>
+               <span class="input-helper"></span>
+            </div>
+            <div id="ciudad" class="input-container">
+               <label class="input-label">Ciudad</label>
+               <select class="type-base input-base">
+                  <option disabled selected>Seleciona</option>
+               </select>
+               <span class="input-helper"></span>
+            </div>
+            <button type="submit" class="type-base button-base">Submit</button>
+         </form>
+      </div>
+      <div class="container part-container">
+         <p class="title">Usuarios Creados</p>
+         <p class="subtitle">Lista de usuarios creados</p>
+         <div id="users-container">
+         </div>
+      </div>
+   </div>
+
+   <div id="notify" class="notify">
+      <p></p>
+   </div>
+</body>
+
+</html>
